@@ -13,7 +13,7 @@ set :runner_command, case
   when Whenever.bin_rails?
     "bin/rails runner"
   when Whenever.script_rails?
-    "script/rails runner"
+    "rails runner"
   else
     "script/runner"
   end
